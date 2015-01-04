@@ -14,7 +14,7 @@ EmberscriptAddon.prototype.blueprintsPath = function() {
 EmberscriptAddon.prototype.included = function(app) {
   this.app = app;
 
-  var plugin = new EmberPreprocessor(this.app.options.coffeeOptions);
+  var plugin = new EmberPreprocessor();
 
   this.app.registry.add('js', plugin);
 };
