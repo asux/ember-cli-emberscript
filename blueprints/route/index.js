@@ -12,6 +12,22 @@ module.exports = {
         type: entity.options.type
       });
     }
+  },
+  fileMapTokens: function() {
+    return {
+      __templatepath__: function(options) {
+        if (options.pod) {
+          return path.join(options.podPath, options.dasherizedModuleName);
+        }
+        return 'templates';
+      },
+      __templatename__: function(options) {
+        if (options.pod) {
+          return 'template';
+        }
+        return options.dasherizedModuleName;
+      }
+    };
   }
 };
 
