@@ -1,6 +1,6 @@
 'use strict';
 var path = require('path');
-var EmberPreprocessor = require('./lib/coffee-preprocessor');
+var EmberPreprocessor = require('./lib/emberscript-preprocessor');
 
 function EmberscriptAddon(project) {
   this._project = project;
