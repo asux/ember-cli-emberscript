@@ -4,4 +4,4 @@
 
 <%= classifiedModuleName %>Adapter = DS.ActiveModelAdapter.extend()
 
-`export default <%= classifiedModuleName %>Adapter
+`export default <%= classifiedModuleName %>Adapter`
